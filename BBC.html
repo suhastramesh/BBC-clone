@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Suhas's BBC </title>
+    
+    <meta charset = "utf-8" />
+    <meta http-equiv="Content-type" content="text/html"; charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type=text/css>
+        body {
+            margin: 0;
+            color: white;
+        }
+        
+        #topbar {
+            background-color: #7A0000;
+            width: 100%;
+            height: 40px;
+        }
+        
+        .fixed {
+            width: 1050px;
+            margin: 0 auto;
+        }
+        
+        #logo {
+            padding-top: 10px;
+            border-right: 2px solid #990000;
+            float: left;
+            padding-right: 10px;
+            position:relative;
+            padding-bottom: 4px;
+        }
+        
+        #signinlogo {
+            font-family: Arial;
+            text-align: center;
+            float: left;
+            line-height: 10px;
+            padding-left: 15px;
+            border-right: 2px solid #990000;
+            position: relative;
+            font-size: 0.9em;
+            padding-right: 40px;
+            font-weight: bold;
+            
+        }
+        
+        #menutop {
+            float:left;
+        }
+        
+        #menutop ul {
+            margin:0;
+            padding: 0;
+        }
+        
+        #menutop li{
+            float:left;
+            list-style:none;
+            font-family: Arial;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 20px 12px 20px;
+            border-right: 2px solid #990000; 
+        }
+        
+        #searchbox {
+            padding: 10px 20px 12px 20px;
+            float:left;   
+        }
+        
+        #searchbox input {
+            height: 18px;
+            border:none;
+            padding-left: 15px;
+            background-image: url("images/search.png");
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: right center;
+        }
+        
+        #nextbar {
+            background-color: #990000;
+            width: 100%;
+            height: 95px;
+            margin: 0;
+            color: white;
+            padding: 0;
+        }
+        
+        .break {
+            clear:both;
+        }
+        
+        #nextbar p {
+            padding: 0;
+            margin: 0;
+            padding-top: 10px;
+            float:left;
+            
+        }
+        
+        .newsfont {
+            font-size: 3em;
+        }
+        
+        span {
+            font-size: 0.7em;
+        }
+        
+        #rss {
+            float:right;
+            margin-top: 37px;
+        }
+        
+        #rss img {
+            height: 14px;
+        }
+        
+        .topicmenu ul{
+            background-color: #3E0C0D;
+            padding: 6px;
+            margin: 0;
+            height: 20px;
+        }
+        
+        .topicmenu li {
+            list-style: none;
+            font-size: 0.9em;
+            border-right: 2px solid #990000;
+            padding-right: 10px;
+            float: left;
+            padding-left: 5px;
+        }
+        
+        .chosen {
+            background-color: white;
+            color:black;
+            height: 24px;
+            position: relative;
+            top: -5px;
+            padding-top: 7px !important;
+        }
+        
+        #webcontent {
+            width: 100%;
+            color: #535353;
+            font-size: 0.8em;
+            float:left;
+            
+        }
+        
+        h1 {
+            color: #1F4F82;
+            font-size: 2.5em;
+        }
+        
+        .rotate {
+            float:left;
+        }
+        
+        .news {
+            position: relative;
+            left: 10px;
+            width: 200px;
+            float:left;
+            top: -12px;
+        }
+        
+        .news a {
+            color: #1F4182;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration:underline;
+        }
+        
+        #watchlisten {
+            width:360px;
+            float:right;
+            background-color: #EEEEEE;
+            position: relative;
+            top: -80px;  
+        }
+        
+        h2 {
+            color: #505050;
+            margin: 10px 0 10px 10px;
+            font-size: 1.9em;
+        }
+        
+        .blocks {
+            margin: 20px 25px 0 0;
+            float: right;
+            width: 50px;
+        }
+        
+        .arrow {
+            height: 137px;
+            border-right: 1px solid white;
+            float: left;
+        }
+        
+        .arrow1 {
+            height: 97px;
+            float: left;
+              
+        }
+        
+        .blockwl {
+            float: left;
+            display: inline-block;
+            background-color: #D1700E;
+            width: 150px;
+            border-right: 1px solid white;     
+        }
+        
+        #watchlisten ul {
+            list-style: none;
+        }
+        
+        #watchlisten li {
+            padding: 14px 0 0 5px;;
+            margin-top: 5px;
+        
+        }
+        
+        
+        
+    
+        
+    </style>
+    
+</head>
+<body>
+<div>
+    <div class="container">
+        <div id="topbar">
+            <div class="fixed">
+                <div id="logo">
+                    <img src= "images/bbc.png" alt= "bbc" height= 22px/>
+                </div>
+                
+                <div id="signinlogo">
+                    <p> Sign In </p>
+                </div>
+                
+                <div id="menutop">
+                    <ul>
+                        <li> News </li>
+                        <li> Sports </li>
+                        <li> Weather </li>
+                        <li> iPlayer </li>
+                        <li> Tv </li>
+                        <li> Radio </li> 
+                        <li> More... </li> 
+                    </ul>
+                </div>
+                
+                <div id="searchbox">
+                    <input type="text" placeholder="Search.." />                 
+                </div>                
+            </div>        
+        </div>    
+        
+        <div class="break"></div>
+        
+        <div id="nextbar">
+            <div class="fixed">
+                <p class="newsfont">NEWS<span>      UK</span></p>
+                
+                <div id="rss"> 
+                    RSS <img src="images/rss.png" />
+                </div>
+                
+                <div class="break"></div>
+                
+                <div class="topicmenu">
+                    <ul>
+                        <li>Home</li>
+                        <li>World</li>
+                        <li>UK</li>
+                        <li class="chosen">England</li>
+                        <li>N.Ireland</li>
+                        <li>Wales</li>
+                        <li>Business</li>
+                        <li>Politics</li>
+                        <li>Health</li>
+                        <li>Education</li>
+                        <li>Sci/Environment</li>
+                        <li>Technology</li>
+                        <li style="border-right:none">Entertainment & Arts</li>       
+                    </ul>
+                </div>              
+            </div>    
+            
+        <div class="break"></div>
+            
+        <div id="webcontent">
+                <div class="fixed">
+                    <p>12 July 2016, Last updated at 13:32 </p><br />
+                    <h1> Pollution to spread across England </h1>
+                    <img class="rotate" src="images/rotate.jpg" />  
+                    <div class="news">
+                        <p> Health warnings have been issued by the government as pollution spreading across England is forecast to hit high levels. </p>
+                        <p><a href="">Why are pollution levels so high?</a></p>
+                        <p><a href="">Saharan dust visible on cars</a></p>
+                        <p><a href="">What will pollution do to us?</a></p>
+                        <p><a href="">Pollution is a serious issue</a></p>
+                    </div>
+                
+                    <div id="watchlisten">
+                        <img src="images/blocks.png" class="blocks" />
+                        <h2> Watch/Listen </h2>
+                        
+                        <img src="images/leftarrow.png" class="arrow" />
+                        
+                        <div class="blockwl">
+                            <img src= "images/leftimg.png" class="arrow1" width=150px/><br />
+                            <p><a href="">Titanic letter could fetch £100,000</a></p>
+                        </div>  
+                        
+                        <div class="blockwl">
+                            <img src= "images/rightimg.png" class="arrow1" width=150px/><br />
+                            <p><a href="">The housing estate delivering its own mail</a></p>
+                        </div>
+                        
+                        <img src="images/rightarrow.png" class="arrow" />
+                        
+                        <ul>
+                            <li><a href= "">BBC5 news live</a></li>
+                            
+                            <li><a href= ""> Radio news</a></li>
+                            
+                            <li><a href= "">Osborne questioned on report</a></li>
+                        
+                        
+                        </ul>
+                        
+                    </div>     
+                    
+                    
+                        
+                         
+                </div> 
+            </div>    
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+
+</body>
+</html>
